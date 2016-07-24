@@ -23,7 +23,7 @@ Sinatra is simple library that helps us build web applications.
 
 ## Step 1: building a Ruby app with server
 
-1. On Nitrous this is not necessary. Create a directory for your project.
+1. Create a directory for your project.
 2. Copy any HTML files from your previous project into the newly created directory.
 3. Create a new subdirectory `step1`. You can do this in Windows Explorer, the Finder or your Editor. In a terminal you can do the following:
 
