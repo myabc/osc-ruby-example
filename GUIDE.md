@@ -110,6 +110,7 @@ Sinatra is simple library that helps us build web applications.
 3. Copy `about.html` from root as `about.erb` in `views/`
 
   _Windows:_
+
   ```shell
   copy ..\about.html views\about.erb
   ```
