@@ -76,6 +76,7 @@ Sinatra is simple library that helps us build web applications.
   *Hint:* On Nitrous and Mac you can open tabs in the terminal.
 
 ## Step 2: enhanced templates
+### 2a. Converting pages to [ERb](http://www.stuartellis.eu/articles/erb/)
 
 1. Go back into the root project directory and copy the `step1` directory as `step2`.
 
@@ -144,6 +145,8 @@ Sinatra is simple library that helps us build web applications.
 
 You will see all pages now look the same – clearly not desirable!
 
+### 2b. Making templates use a layout properly
+
 1. Now remove all HTML tags within your page area (but NOT navigation) in `layout.erb`.
   In this example we use `<div id="page">`
 2. Instead, add a new ERB tag `<%= yield %>`. This results in the contents of your
@@ -152,12 +155,16 @@ You will see all pages now look the same – clearly not desirable!
 
 You should now see the page with the header twice – also not good!
 
+### 2c. Fixing the double header
+
 1. In each `.erb` template, remove all the HTML tags from the the top up to the
   content. Similarly, do the same for the tags between content and the bottom of
   the file.
 2. Reboot, if necessary, and reload each page to check.
 
 You should now see the page almost as it is meant to be! However, the eagle-eyed among you may notice the menu doesn't highlight correctly. We'll solve this with some more code.
+
+### 2d. Highlighting the active page
 
 1. Add the following to your `app.rb`:
 
@@ -180,6 +187,8 @@ You should now see the page almost as it is meant to be! However, the eagle-eyed
 3. Reboot, if necessary, and reload each page to check.
 
 Good work. You've almost completed Step 2.
+
+### 2d. Handling parameters
 
 Before we go to Step 3, we'll quickly see how parameters work.
 
