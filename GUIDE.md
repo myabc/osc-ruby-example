@@ -59,6 +59,28 @@ Sinatra is simple library that helps us build web applications.
   cd step1
   ```
 
+7. Boot the application for the first time:
+
+  _Windows_:
+
+  ```shell
+  ruby app.rb -o 0.0.0.0 -p 4567
+  ```
+
+  _Mac/Linux/Nitrous:_
+
+  ```shell
+  shotgun app.rb --host 0.0.0.0 --port 4567
+  ```
+
+  You can now visit your site for the first time. If you're running on Nitrous
+  navigate to _Preview > Port 4567_. If you're running the code on your own
+  computer then visit <http://localhost:4567>.
+
+  To stop the server, press `Ctrl + C`.
+
+  *Hint:* On Nitrous and Mac you can open tabs in the terminal.
+
 ## Step 2: enhanced templates
 
 1. Go back into the root project directory and copy the `step1` directory as `step2`.
@@ -161,4 +183,4 @@ Before we go to Step 3, we'll quickly see how parameters work.
   ```
 
 2. Reboot, if necessary.
-3. Visit <http://localhost:4567/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
+3. Visit </welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
