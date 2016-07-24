@@ -33,6 +33,7 @@ The Mac actually comes with a Ruby built-in, but we'll install the latest and gr
   ```shell
   ruby -v
   ```
+
   You should see something similar to the following:
   ```shell
   ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin15]
