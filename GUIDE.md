@@ -126,12 +126,6 @@ Sinatra is simple library that helps us build web applications.
     erb :index, layout: :layout
   end
 
-  get '/styles.css' do
-    content_type 'text/css'
-
-    File.read 'styles.css'
-  end
-
   get '/about/?' do
     erb :about, layout: :layout
   end
