@@ -1,11 +1,5 @@
 require 'sinatra'
 
-helpers do
-  def active_page?(path = '')
-    request.path_info == '/' + path
-  end
-end
-
 get '/' do
   # NOTE: this must be a Symbol, otherwise it expects a String template
   erb :index, layout: :layout

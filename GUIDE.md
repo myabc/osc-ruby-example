@@ -165,30 +165,6 @@ You should now see the page with the header twice – also not good!
 
 You should now see the page almost as it is meant to be! However, the eagle-eyed among you may notice the menu doesn't highlight correctly. We'll solve this with some more code.
 
-### 2d. Highlighting the active page
-
-1. Add the following to your `app.rb`:
-
-  ```ruby
-  helpers do
-    def active_page?(path = '')
-      request.path_info == '/' + path
-    end
-  end
-  ```
-2. Add add/change the `class` on the menu links in `layout.erb` as follows:
-
-  ```erb
-  <ul>
-    <li><a class="<%= 'active' if '/' == active_page? %>" href="/">Home</a></li>
-    <li><a class="<%= 'active' if '/about' == active_page? %>" href="/about">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  ```
-3. Reboot, if necessary, and reload each page to check.
-
-Good work. You've almost completed Step 2.
-
 ### 2d. Handling parameters
 
 Before we go to Step 3, we'll quickly see how parameters work.
