@@ -1,4 +1,12 @@
-# Installing Ruby
+# Installing/Using a Ruby
+
+## _Easier Option:_ Using Nitrous: Ruby in the Cloud
+
+Follow the instructions in [Using a Cloud Service](http://guides.railsgirls.com/install#using-a-cloud-service),
+but pick **Ruby** not **Ruby/Rails** from the template selection when creating
+your first project.
+
+## _More Advanced:_ Install Ruby on your Computer
 
 ### On Windows
 
@@ -42,11 +50,8 @@ The Mac actually comes with a Ruby built-in, but we'll install the latest and gr
 
 ### Alternative Options
 
-In the event the above options fail, don't despair.
-Check out these two options:
-
-* [Alternative Installment for all OS](http://guides.railsgirls.com/install#virtual-machine)
-* [Using a Cloud Service](http://guides.railsgirls.com/install#using-a-cloud-service)
+In the event the above options fail, don't despair. Check out
+[Alternative Installment for all OS](http://guides.railsgirls.com/install#virtual-machine).
 
 [Rails Girls](http://railsgirls.com/) also provides a very useful [Guide to installing Ruby along with the Rails Framework](http://guides.railsgirls.com/install).
 
