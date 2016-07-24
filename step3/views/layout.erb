@@ -12,8 +12,8 @@
     </header>
     <nav id="top-nav">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a class="<%= 'active' if '/' == active_page? %>" href="/">Home</a></li>
+        <li><a class="<%= 'active' if '/about' == active_page? %>" href="/about">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
