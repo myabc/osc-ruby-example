@@ -27,7 +27,7 @@ Sinatra is simple library that helps us build web applications.
 2. Copy any HTML files from your previous project into the newly created directory.
 3. Create a new subdirectory `step1`. You can do this in Windows Explorer, the Finder or your Editor. In a terminal you can do the following:
 
-  _Windows_:
+  _Windows:_
 
   ```shell
   cd C:\Users\Documents/path\to\your\project\
@@ -55,7 +55,7 @@ Sinatra is simple library that helps us build web applications.
 
 7. Boot the application for the first time:
 
-  _Windows_:
+  _Windows:_
 
   ```shell
   ruby app.rb -o 0.0.0.0 -p 4567
@@ -79,7 +79,7 @@ Sinatra is simple library that helps us build web applications.
 
 1. Go back into the root project directory and copy the `step1` directory as `step2`.
 
-  _Windows_:
+  _Windows:_
 
   ```shell
   cd ..
