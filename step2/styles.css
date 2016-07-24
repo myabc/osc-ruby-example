@@ -1,0 +1,148 @@
+html, body {
+  margin:  0;
+  padding: 0;
+}
+
+* {
+  /* https://developer.mozilla.org/en/docs/Web/CSS/box-sizing */
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Slabo 27px', serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+header {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
+  background: linear-gradient(45deg, #006666, darkgreen);
+}
+
+footer {
+  background-color: #eee;
+  font-size: 1.5rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 5rem;
+  color: white;
+}
+
+nav {
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    flex-basis: 100%;
+  }
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+}
+
+#top-nav {
+  font-size: 1.2em;
+  padding: 0 1rem;
+  border-bottom: 1px solid darkgreen;
+}
+
+#top-nav a {
+  padding: 0.5rem 1.5rem;
+}
+
+#top-nav a:hover {
+  background-color: #eee;
+}
+
+#bottom-nav ul li {
+  padding: 0 0.25rem;
+}
+
+#bottom-nav ul li:first-of-type {
+  padding-left: 0;
+}
+
+#bottom-nav a {
+}
+
+#bottom-nav a:hover {
+  text-decoration: underline;
+}
+
+#page {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: stretch;
+}
+
+#articles {
+  flex: 3;
+  padding: 0 1.5rem;
+  flex-basis: 300px;
+}
+
+#side-area {
+  flex: 1;
+  padding: 0 1.5rem;
+  flex-basis: 200px;
+}
+
+#coming-up {
+  display: flex;
+  flex-flow: wrap;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+#coming-up article {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 0.5rem 1rem;
+}
+
+#coming-up article > img {
+  padding: 0;
+}
+
+#coming-up article:nth-child(3n+2) {
+  background-color: #eee;
+}
