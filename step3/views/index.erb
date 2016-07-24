@@ -1,6 +1,6 @@
 <section id="articles">
   <p>
-    <%= Time.now.day %> / <%= Time.now.month %> / <%= Time.now.year %>
+    <%= Time.now.day %> <%= Time.now.strftime("%B") %> <%= Time.now.year %>
   </p>
   <article class="">
     <h1>My second article!</h1>
