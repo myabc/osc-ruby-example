@@ -76,6 +76,11 @@ nav li a {
   font-size: 2rem;
 }
 
+nav li a.active {
+  background-color: black;
+  color: white;
+}
+
 #top-nav {
   font-size: 1.2em;
   padding: 0 1rem;
