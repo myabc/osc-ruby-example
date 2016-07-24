@@ -9,6 +9,7 @@
   ```shell
   ruby -v
   ```
+
   You should see something similar to the following:
   ```shell
   ruby 2.2.5p0 (2015-12-25 revision 53280) [mingw]
