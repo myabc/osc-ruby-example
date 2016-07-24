@@ -47,13 +47,7 @@ Sinatra is simple library that helps us build web applications.
 5. Open `index.html` and other `.html` files and adjust all paths to be absolute. This means links should be prefixed with a forward slash (`/`).
 6. In the Terminal go into the `step1` directory:
 
-  _Windows_:
-
-  ```shell
-  cd step1
-  ```
-
-  _Mac/Linux/Nitrous:_
+  _Windows and Mac/Linux/Nitrous:_
 
   ```shell
   cd step1
@@ -92,7 +86,7 @@ Sinatra is simple library that helps us build web applications.
   Xcopy /E /I step2 step3
   ```
 
-  On Mac:
+  _Mac/Linux/Nitrous:_
 
   ```shell
   cd ..
@@ -103,39 +97,32 @@ Sinatra is simple library that helps us build web applications.
 
 2. Change into `step2`, create a new directory `views`:
 
-  _Windows_:
+  _Windows and Mac/Linux/Nitrous_:
 
   ```shell
-  cd ..
-  Xcopy /E /I step2 step3
-  ```
-
-  On Mac:
-
-  ```shell
-  cd ..
-  cp -R step2 step3
+  cd step2
+  mkdir views
   ```
 
   *Tip*: You can do this in Finder.app or Windows Explorer if you prefer.
 
-3. Copy `about.html` as `about.erb` in `views/`
+3. Copy `about.html` from root as `about.erb` in `views/`
 
-  _Windows_:
+  _Windows:_
   ```shell
-  copy ..\about.html about.html
+  copy ..\about.html views\about.erb
   ```
 
-  On Mac:
+  _Mac/Linux/Nitrous:_
 
   ```shell
-  cp -R ../about.html about.html
+  cp -R ../about.html views/about.erb
   ```
 
   *Tip*: You can do this in Finder.app or Windows Explorer if you prefer.
 
-3. Copy `index.html` as `index.erb` into `views/`.
-4. Copy `styles.css` into `public/`.
+3. Copy `index.html` from root as `index.erb` into `views/` following the same method.
+4. Copy `styles.css` as well as image from root into `public/`.
 5. Create a new file `layout.erb` in `views/` with your editor.
 6. Copy and paste the contents of `index.html` into `layout.erb` with your editor.
 7. Remove all HTML tags within your page area (but NOT navigation). In this example we use `<div id="page">`.
@@ -183,4 +170,4 @@ Before we go to Step 3, we'll quickly see how parameters work.
   ```
 
 2. Reboot, if necessary.
-3. Visit </welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
+3. Visit <http://localhost:4567/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
