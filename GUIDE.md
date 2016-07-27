@@ -167,7 +167,7 @@ You should now see the page almost as it is meant to be! However, the eagle-eyed
 
 ### 2d. Handling parameters
 
-Before we go to Step 3, we'll quickly see how parameters work.
+We'll quickly see how parameters work.
 
 1. Add a new 'route' in `app.rb`:
 
