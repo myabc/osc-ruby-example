@@ -43,7 +43,17 @@ Sinatra is simple library that helps us build web applications.
 
   **Tip:** use the tab for autocompletion when using terminal.
 
-4. Create a new empty file `app.rb` in `step1` with your editor.
+4. Create a new empty file `app.rb` in `step1` with your editor. Add one route for page in your website:
+
+  ```ruby
+  get '/' do
+    File.read 'index.html'
+  end
+  get '/about/?' do
+    File.read 'about.html'
+  end
+  ```
+
 5. Open `index.html` and other `.html` files and adjust all paths to be absolute. This means links should be prefixed with a forward slash (`/`).
 6. In the Terminal go into the `step1` directory:
 
