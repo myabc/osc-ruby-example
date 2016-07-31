@@ -117,7 +117,7 @@ Sinatra is simple library that helps us build web applications.
 
   *Tip*: You can do this in Finder.app or Windows Explorer if you prefer.
 
-3. Copy `about.html` from root as `about.erb` in `views/`
+3. Copy all your pages from root into views. For example `about.html` from root as `about.erb` in `views/`
 
   _Windows:_
 
@@ -133,12 +133,12 @@ Sinatra is simple library that helps us build web applications.
 
   *Tip*: You can do this in Finder.app or Windows Explorer if you prefer.
 
-3. Copy `index.html` from root as `index.erb` into `views/` following the same method.
-4. Copy `styles.css` as well as image from root into `public/`.
-5. Create a new file `layout.erb` in `views/` with your editor.
-6. Copy and paste the contents of `index.html` into `layout.erb` with your editor.
-7. Remove all HTML tags within your page area (but NOT navigation). In this example we use `<div id="page">`.
-8. Copy and paste the following into `app.rb`:
+4. Copy `index.html` from root as `index.erb` into `views/` following the same method (if you did not do it before).
+5. Copy `styles.css` as well as image from root into `public/`.
+6. Create a new file `layout.erb` in `views/` with your editor.
+7. Copy and paste the contents of `index.html` into `layout.erb` with your editor.
+8. Remove all HTML tags within your page area (but NOT navigation). In this example we use `<div id="page">`.
+9. Copy and paste the following into `app.rb`; with a route for every page:
 
   ```ruby
   require 'sinatra'
@@ -152,7 +152,7 @@ Sinatra is simple library that helps us build web applications.
   end
   ```
 
-9. Reboot, if necessary, and reload each page to check.
+10. Reboot, if necessary, and reload each page to check.
 
 You will see all pages now look the same – clearly not desirable!
 
