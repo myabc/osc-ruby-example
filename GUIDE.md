@@ -186,7 +186,31 @@ You should now see the page almost as it is meant to be! However, the eagle-eyed
   </ul>
   ```
 
-### 2e. Handling parameters
+### 2e. Using ruby for inside the code
+
+You can insert ruby code to address your needs. You will use `<% … %>` for ruby processes and `<%= … %>` to print ruby results.
+
+1. Add current date:
+
+  ```erb
+  <div class="time">
+    <p>
+      <%= Time.now.strftime('%e') %> <%= Time.now.strftime('%h') %> <%= Time.now.strftime('%G') %>
+    </p>
+  </div>
+  ```
+
+2. Add a loop with images:
+
+  ```erb
+  <div class="oxford_images">
+    <% 3.times do |i| %>
+    <img src="<%= '/Oxford_view' + (i + 1).to_s + '.jpg' %>" />
+    <% end %>
+  </div>
+  ```
+
+### 2f. Handling parameters
 
 We'll quickly see how parameters work.
 
