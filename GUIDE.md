@@ -200,3 +200,108 @@ We'll quickly see how parameters work.
 
 2. Reboot, if necessary.
 3. Visit <http://localhost:4567/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
+
+## Step 3: deploying
+
+1. Go back into the root project directory and copy the `step2` directory as `step3`.
+
+  _Windows:_
+
+  ```shell
+  cd ..
+  Xcopy /E /I step2 step3
+  ```
+
+  _Mac/Linux/Nitrous:_
+
+  ```shell
+  cd ..
+  cp -R step2 step3
+  ```
+
+  *Tip*: You can do this in Finder.app or Windows Explorer if you prefer.
+
+2. Create a git repository for the `step3` project and commit the initial contents:
+
+  _Windows and Mac/Linux/Nitrous_:
+
+  ```shell
+  git init
+  # Add all files.
+  git add .
+  git commit -m "My first commit"
+  ```
+
+  *Tip*: You can do this in GitHub for Desktop, if you prefer.
+
+3. Create a new file `Gemfile` with your editor. Copy and paste the following into `Gemfile`:
+
+  ```ruby
+  source 'https://rubygems.org'
+
+  gem 'sinatra'
+  gem 'erubis'
+  ```
+
+  This specifies dependencies, or in other words, the libraries that your app uses. They will be installed automatically on deployment.
+
+4. Create a new file `config.ru` with your editor. Copy and paste the following into `config.ru`:
+
+  ```ruby
+  require './step3/app.rb'
+  run Sinatra::Application
+  ```
+
+  This code tells Heroku what application should be run after deploying.
+
+5. Finish off the process of specifying dependencies by running the `bundle` command, then commit:
+
+  _Windows and Mac/Linux/Nitrous_:
+
+  ```shell
+  bundle install
+  git add .
+  git commit -m "Add Gemfile and config"
+  ```
+
+6. Sign Up for a _free_ account on [Heroku](https://heroku.com/).
+
+7. Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/) (no need to run the app).
+
+8. Once Heroku Toolbelt is installed, you need to login in Terminal with the account details you specified and create an application. Decide a name for your application; if your application were named `osc-football-blog-app` then you would do the following:
+
+  _Windows and Mac/Linux/Nitrous_:
+
+  ```shell
+  heroku login
+  heroku create osc-football-blog-app --region eu
+  ```
+
+  After a brief moment you should see the following:
+
+  ```
+  Creating ⬢ osc-football-blog-app... done, region is eu
+  https://osc-football-blog-app.herokuapp.com/ | https://git.heroku.com/osc-football-blog-app.git
+  ```
+
+  This means your application is now ready for deployment.
+
+9. Deploy using the `git push` command.
+
+  _Windows and Mac/Linux/Nitrous_:
+
+  ```shell
+  git push heroku master
+  ```
+
+  From now on to re-deploy you should be able to just use `git push heroku`.
+
+10. Open up your application:
+
+  _Windows and Mac/Linux_:
+
+  `heroku open`
+
+  _Nitrous_:
+
+  Manually visit https://osc-football-blog-app.herokuapp.com/ in your browser.
