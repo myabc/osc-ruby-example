@@ -203,7 +203,7 @@ We'll quickly see how parameters work.
 
 ## Step 3: deploying
 
-1. Go back into the root project directory and copy the `step1` directory as `step2`.
+1. Go back into the root project directory and copy the `step2` directory as `step3`.
 
   _Windows:_
 
@@ -234,15 +234,7 @@ We'll quickly see how parameters work.
 
   *Tip*: You can do this in GitHub for Desktop, if you prefer.
 
-3. Change into `step3`:
-
-  _Windows and Mac/Linux/Nitrous_:
-
-  ```shell
-  cd step3
-  ```
-
-4. Create a new file `Gemfile` with your editor. Copy and paste the following into `Gemfile`:
+3. Create a new file `Gemfile` with your editor. Copy and paste the following into `Gemfile`:
 
   ```ruby
   source 'https://rubygems.org'
@@ -253,7 +245,7 @@ We'll quickly see how parameters work.
 
   This specifies dependencies, or in other words, the libraries that your app uses. They will be installed automatically on deployment.
 
-5. Create a new file `config.ru` with your editor. Copy and paste the following into `config.ru`:
+4. Create a new file `config.ru` with your editor. Copy and paste the following into `config.ru`:
 
   ```ruby
   require './step3/app.rb'
@@ -262,21 +254,21 @@ We'll quickly see how parameters work.
 
   This code tells Heroku what application should be run after deploying.
 
-6. Finish off the process of specifying dependencies by running the `bundle` command, then commit:
+5. Finish off the process of specifying dependencies by running the `bundle` command, then commit:
 
   _Windows and Mac/Linux/Nitrous_:
 
   ```shell
   bundle install
   git add .
-  git commit -m "Add Gemfile"
+  git commit -m "Add Gemfile and config"
   ```
 
-7. Sign Up for a _free_ account on [Heroku](https://heroku.com/).
+6. Sign Up for a _free_ account on [Heroku](https://heroku.com/).
 
-8. Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/).
+7. Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/) (no need to run the app).
 
-9. Once Heroku Toolbelt is installed, you need to login with the account details you specified and create an application. If your application were named `osc-football-blog-app` then you would do the following:
+8. Once Heroku Toolbelt is installed, you need to login in Terminal with the account details you specified and create an application. Decide a name for your application; if your application were named `osc-football-blog-app` then you would do the following:
 
   _Windows and Mac/Linux/Nitrous_:
 
@@ -294,7 +286,7 @@ We'll quickly see how parameters work.
 
   This means your application is now ready for deployment.
 
-10. Deploy using the `git push` command.
+9. Deploy using the `git push` command.
 
   _Windows and Mac/Linux/Nitrous_:
 
@@ -304,7 +296,7 @@ We'll quickly see how parameters work.
 
   From now on to re-deploy you should be able to just use `git push heroku`.
 
-11. Open up your application:
+10. Open up your application:
 
   _Windows and Mac/Linux_:
 
