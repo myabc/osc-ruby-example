@@ -19,8 +19,15 @@
     </p>
   </div>
   <div class="ad">
-    <img src="/Oxford_view.jpg">
+    <img src="/Oxford_view.jpg" />
   </div>
+
+  <div class="oxford_images">
+    <% 3.times do |i| %>
+    <img src="<%= '/Oxford_view' + (i + 1).to_s + '.jpg' %>" />
+    <% end %>
+  </div>
+
   <section id="coming-up">
     <article class="">
       <img src="http://placehold.it/150x150">
