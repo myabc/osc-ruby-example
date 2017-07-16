@@ -2,7 +2,7 @@
 
 ## What you'll need
 
-If you're using Ruby on your own machine - and not using Nitrous - then you need to check you have all of the following:
+If you're using Ruby on your own machine - and not using Cloudenvy - then you need to check you have all of the following:
 
 1. Recent **Ruby** installed: See [][INSTALL_RUBY.md]
 3. A good text editor, e.g. [Atom](https://atom.io/).
@@ -16,7 +16,7 @@ Sinatra is simple library that helps us build web applications.
 
   ```ruby
   gem install sinatra erubis
-  gem install shotgun # on Mac/Linux/Nitrous only
+  gem install shotgun # on Mac/Linux/Cloudenvy only
   ```
 
   Wait for the installation to proceed. From now on we'll refer to **Terminal** and **Command Prompt on Windows** as **the terminal**.
@@ -57,7 +57,7 @@ Sinatra is simple library that helps us build web applications.
 5. Open `index.html` and other `.html` files and adjust all paths to be absolute. This means links should be prefixed with a forward slash (`/`).
 6. In the Terminal go into the `step1` directory:
 
-  _Windows and Mac/Linux/Nitrous:_
+  _Windows and Mac/Linux/Cloudenvy:_
 
   ```shell
   cd step1
@@ -71,19 +71,23 @@ Sinatra is simple library that helps us build web applications.
   ruby app.rb -o 0.0.0.0 -p 3000
   ```
 
-  _Mac/Linux/Nitrous:_
+  _Mac/Linux/Cloudenvy:_
 
   ```shell
   shotgun app.rb --host 0.0.0.0 --port 3000
   ```
 
-  You can now visit your site for the first time. If you're running on Nitrous
-  navigate to _Preview > Port 3000_. If you're running the code on your own
-  computer then visit <http://localhost:3000>.
+  You can now visit your site for the first time. If you're running on Cloudenvy
+  navigate to an address that looks like <http://node3.codenvy.io:33079/>. You can
+  find the exact address in the Runtime configuration tab of your Workspace settings.
+
+  If you're running the code on your own computer then visit <http://localhost:3000>.
+
+  From now on in this tutorial, this URL will be referred to as <http://localhost:PORT>.
 
   To stop the server, press `Ctrl + C`.
 
-  *Hint:* On Nitrous and Mac you can open tabs in the terminal.
+  *Hint:* On Cloudenvy and Mac you can open tabs in the terminal.
 
 ## Step 2: enhanced templates
 ### 2a. Converting pages to [ERb](http://www.stuartellis.eu/articles/erb/)
@@ -97,7 +101,7 @@ Sinatra is simple library that helps us build web applications.
   Xcopy /E /I step2 step3
   ```
 
-  _Mac/Linux/Nitrous:_
+  _Mac/Linux/Cloudenvy:_
 
   ```shell
   cd ..
@@ -108,7 +112,7 @@ Sinatra is simple library that helps us build web applications.
 
 2. Change into `step2`, create a new directory `views`:
 
-  _Windows and Mac/Linux/Nitrous_:
+  _Windows and Mac/Linux/Cloudenvy_:
 
   ```shell
   cd step2
@@ -125,7 +129,7 @@ Sinatra is simple library that helps us build web applications.
   copy ..\about.html views\about.erb
   ```
 
-  _Mac/Linux/Nitrous:_
+  _Mac/Linux/Cloudenvy:_
 
   ```shell
   cp -R ../about.html views/about.erb
@@ -223,7 +227,7 @@ We'll quickly see how parameters work.
   ```
 
 2. Reboot, if necessary.
-3. Visit <http://localhost:3000/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
+3. Visit <http://YOUR-ADDRESS:PORT/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
 
 ## Step 3: deploying
 
@@ -236,7 +240,7 @@ We'll quickly see how parameters work.
   Xcopy /E /I step2 step3
   ```
 
-  _Mac/Linux/Nitrous:_
+  _Mac/Linux/Cloudenvy:_
 
   ```shell
   cd ..
@@ -247,7 +251,7 @@ We'll quickly see how parameters work.
 
 2. Create a git repository for the `step3` project and commit the initial contents:
 
-  _Windows and Mac/Linux/Nitrous_:
+  _Windows and Mac/Linux/Cloudenvy_:
 
   ```shell
   git init
@@ -280,7 +284,7 @@ We'll quickly see how parameters work.
 
 5. Finish off the process of specifying dependencies by running the `bundle` command, then commit:
 
-  _Windows and Mac/Linux/Nitrous_:
+  _Windows and Mac/Linux/Cloudenvy_:
 
   ```shell
   bundle install
@@ -294,7 +298,7 @@ We'll quickly see how parameters work.
 
 8. Once Heroku Toolbelt is installed, you need to login in Terminal with the account details you specified and create an application. Decide a name for your application; if your application were named `osc-football-blog-app` then you would do the following:
 
-  _Windows and Mac/Linux/Nitrous_:
+  _Windows and Mac/Linux/Cloudenvy_:
 
   ```shell
   heroku login
@@ -312,7 +316,7 @@ We'll quickly see how parameters work.
 
 9. Deploy using the `git push` command.
 
-  _Windows and Mac/Linux/Nitrous_:
+  _Windows and Mac/Linux/Cloudenvy_:
 
   ```shell
   git push heroku master
@@ -326,6 +330,6 @@ We'll quickly see how parameters work.
 
   `heroku open`
 
-  _Nitrous_:
+  _Cloudenvy_:
 
   Manually visit https://osc-football-blog-app.herokuapp.com/ in your browser.

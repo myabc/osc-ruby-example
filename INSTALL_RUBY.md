@@ -1,6 +1,6 @@
 # Installing/Using a Ruby
 
-## _Easier Option:_ Using Nitrous: Ruby in the Cloud
+## _Easier Option:_ Using Cloudenvy: Ruby in the Cloud
 
 Follow the instructions in [Using a Cloud Service](http://guides.railsgirls.com/install#using-a-cloud-service),
 but pick **Ruby** not **Ruby/Rails** from the template selection when creating
