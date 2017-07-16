@@ -20,7 +20,7 @@ your first project.
 
   You should see something similar to the following:
   ```shell
-  ruby 2.3.3p0 (2017-01-01 revision 53280) [mingw]
+  ruby 2.3.3p222 (2016-11-21 revision 56859) [mingw]
   ```
 
 ### On Mac
@@ -45,7 +45,7 @@ The Mac actually comes with a Ruby built-in, but we'll install the latest and gr
 
   You should see something similar to the following:
   ```shell
-  ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin15]
+  ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-darwin15]
   ```
 
 ### Alternative Options
