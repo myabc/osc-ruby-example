@@ -30,7 +30,7 @@ Sinatra is simple library that helps us build web applications.
   _Windows:_
 
   ```shell
-  cd C:\Users\Documents/path\to\your\project\
+  cd C:\Users\Documents\path\to\your\project\
   mkdir step1
   ```
 
@@ -46,6 +46,8 @@ Sinatra is simple library that helps us build web applications.
 4. Create a new empty file `app.rb` in `step1` with your editor. Add one route for page in your website:
 
   ```ruby
+  require 'sinatra'
+  
   get '/' do
     File.read 'index.html'
   end
