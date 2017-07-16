@@ -68,18 +68,18 @@ Sinatra is simple library that helps us build web applications.
   _Windows:_
 
   ```shell
-  ruby app.rb -o 0.0.0.0 -p 4567
+  ruby app.rb -o 0.0.0.0 -p 3000
   ```
 
   _Mac/Linux/Nitrous:_
 
   ```shell
-  shotgun app.rb --host 0.0.0.0 --port 4567
+  shotgun app.rb --host 0.0.0.0 --port 3000
   ```
 
   You can now visit your site for the first time. If you're running on Nitrous
-  navigate to _Preview > Port 4567_. If you're running the code on your own
-  computer then visit <http://localhost:4567>.
+  navigate to _Preview > Port 3000_. If you're running the code on your own
+  computer then visit <http://localhost:3000>.
 
   To stop the server, press `Ctrl + C`.
 
@@ -223,7 +223,7 @@ We'll quickly see how parameters work.
   ```
 
 2. Reboot, if necessary.
-3. Visit <http://localhost:4567/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
+3. Visit <http://localhost:3000/welcome/John> and you'll see the name printed in the browser. Change the parameter until your heart's content.
 
 ## Step 3: deploying
 
