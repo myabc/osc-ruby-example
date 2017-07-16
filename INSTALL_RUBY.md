@@ -10,8 +10,8 @@ your first project.
 
 ### On Windows
 
-1. Download **Ruby 2.2.5** from http://rubyinstaller.org/downloads/. If you have a
-64-bit machine (check in _Start > Settings > Settings > About_), download **Ruby 2.2.5 (x64)**.
+1. Download **Ruby 2.3.3** from http://rubyinstaller.org/downloads/. If you have a
+64-bit machine (check in _Start > Settings > Settings > About_), download **Ruby 2.3.3 (x64)**.
 2. Run the installer with the default options *except* **Add Ruby Executables to your path**, which must be checked.
 3. Test by running **Command Prompt** (in *Start > All Applications > Accessories > System > System Tools*) and typing the following:
   ```shell
@@ -20,7 +20,7 @@ your first project.
 
   You should see something similar to the following:
   ```shell
-  ruby 2.2.5p0 (2015-12-25 revision 53280) [mingw]
+  ruby 2.3.3p0 (2017-01-01 revision 53280) [mingw]
   ```
 
 ### On Mac
